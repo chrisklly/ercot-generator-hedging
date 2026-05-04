@@ -1,0 +1,37 @@
+{
+  "asset": {
+    "name": "Forney Energy Center",
+    "plant_id_eia": 55480,
+    "county": "Kaufman",
+    "state": "TX",
+    "balancing_authority": "ERCO",
+    "technology": "Natural Gas Fired Combined Cycle",
+    "net_summer_capacity_mw": 1770.0,
+    "net_winter_capacity_mw": 1966.0,
+    "price_proxy": "HB_NORTH",
+    "price_proxy_description": "ERCOT North Hub day-ahead settlement point price"
+  },
+  "generator_model": {
+    "heat_rate_mmbtu_per_mwh": 7.0,
+    "variable_om_usd_per_mwh": 3.0,
+    "availability_mean": 0.94,
+    "availability_std": 0.04,
+    "min_availability": 0.7,
+    "max_availability": 1.0,
+    "dispatch_smoothing_width_usd_per_mwh": 5.0,
+    "capacity_factor_cap": 0.9
+  },
+  "hedge": {
+    "option_type": "monthly average-price Asian put",
+    "underlying": "HB_NORTH hourly/day-ahead average over hedge month",
+    "default_strike_policy": "Use 10th, 25th, 50th percentiles of historical monthly average HB_NORTH",
+    "hedge_ratio_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "annual_risk_free_rate": 0.04
+  }
+}

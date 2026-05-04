@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+
+# Data (IMPORTANT)
+data/raw/
+data/processed/
+
+# Outputs
+outputs/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
