@@ -106,15 +106,3 @@ The final analysis reports:
 - break-even premium
 - optimal hedge ratio grid search
 
-## Recommended final report structure
-
-1. Introduction and project motivation
-2. ERCOT market and Forney asset description
-3. Data sources and cleaning
-4. Generator economics model
-5. Asian put valuation methodology
-6. Monte Carlo simulation design
-7. Hedge-effectiveness results
-8. Sensitivity analysis
-9. Limitations and extensions
-10. Conclusion
